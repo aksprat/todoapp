@@ -15,6 +15,7 @@ EXPOSE 5000
 
 # Define environment variable for Flask to run in production mode
 ENV FLASK_ENV=production
+ENV NODE_OPTIONS=--max_old_space_size=2048
 
 # Command to run the Flask app
 CMD ["flask", "run", "--host=0.0.0.0"]
